@@ -1,0 +1,141 @@
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+body {
+    background: url(kep/letöltés.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color:rgb(232, 33, 33);
+    margin-left: 700px;
+    margin-right: 700px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 25px;
+}
+
+.box {
+    background-color:rgb(232, 33, 33);
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.audio-player {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    flex: 1;
+    min-width: 300px;
+}
+
+.audio-player h3 {
+    color: whitesmoke;
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.audio-player audio {
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.audio-player .audio-title {
+    color: whitesmoke;
+    font-size: 14px;
+    margin: 15px 0 0 0;
+    opacity: 0.9;
+}
+
+.vers {
+    background-color:rgb(232, 33, 33);
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.modal {
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: rgb(232, 33, 33);
+    padding: 40px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-content h2 {
+    color: whitesmoke;
+    font-size: 32px;
+    margin: 0 0 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content p {
+    color: whitesmoke;
+    font-size: 18px;
+    margin: 0 0 30px 0;
+    line-height: 1.5;
+}
+
+.modal-button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: whitesmoke;
+    padding: 12px 40px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.modal-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
